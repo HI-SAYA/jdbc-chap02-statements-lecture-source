@@ -31,7 +31,7 @@ public class Application1 {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
-            close(con);
+            close(rset);
             close(stmt);
             close(con);
         }

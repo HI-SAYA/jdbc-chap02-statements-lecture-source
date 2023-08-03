@@ -19,9 +19,9 @@ public class JDBCTemplate {
             String driver = prop.getProperty("driver");
             String url = prop.getProperty("url");
 
-            Class.forName(driver);
+            Class.forName(driver); // 1
 
-            con = DriverManager.getConnection(url, prop);
+            con = DriverManager.getConnection(url, prop); //2
 
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+    <!-- 성으로 직원을 조회하는 쿼리 -->
+    <!-- 개행 자유롭게 가능 -->
+    <entry key="selectEmpByFamilyName">
+        SELECT
+              E.*
+         FROM EMPLOYEE E
+        WHERE E.EMP_NAME LIKE CONCAT(?, '%')
+    </entry>
+
+</properties>
+
+
+<!-- Application4 연동 -->
